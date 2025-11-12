@@ -1,0 +1,51 @@
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./Login.css";
+
+function Login() {
+  const [admin_name, setAdminName] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    if (admin_name === "naveen" && password === "1234") {
+      setMessage("Login Successful!");
+      setTimeout(() => navigate("/home"), 500); 
+    } else {
+      setMessage("Invalid admin name or password");
+    }
+  };
+
+  return (
+    <div className="login-container">
+      <h2>Admin Login</h2>
+
+      <form onSubmit={handleLogin} className="login-form">
+        <input
+          type="text"
+          placeholder="Enter Admin Name"
+          value={admin_name}
+          onChange={(e) => setAdminName(e.target.value)}
+          required
+        />
+
+        <input
+          type="password"
+          placeholder="Enter Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+
+        <button type="submit">Login</button>
+      </form>
+
+      {message && <p className="message">{message}</p>}
+    </div>
+  );
+}
+
+export default Login;
