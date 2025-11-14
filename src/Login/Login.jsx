@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-
 function Login() {
   const [admin_name, setAdminName] = useState("");
   const [password, setPassword] = useState("");
@@ -11,9 +10,9 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    if (admin_name === "naveen" && password === "1234") {
+    if (admin_name === "naveen" && password === "1234" || admin_name === "nk" && password === "1234"  ) {
       setMessage("Login Successful!");
-      setTimeout(() => navigate("/home"), 500); 
+      setTimeout(() => navigate("/home"), 800 ); 
     } else {
       setMessage("Invalid admin name or password");
     }
@@ -31,7 +30,6 @@ function Login() {
           onChange={(e) => setAdminName(e.target.value)}
           required
         />
-
         <input
           type="password"
           placeholder="Enter Password"
@@ -40,7 +38,7 @@ function Login() {
           required
         />
 
-        <button type="submit">Login</button>
+        <button type="submit" onClick={{navigate}}>Login</button>
       </form>
 
       {message && <p className="message">{message}</p>}
