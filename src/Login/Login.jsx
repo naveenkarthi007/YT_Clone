@@ -10,7 +10,7 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    if (admin_name === "naveen" && password === "1234" || admin_name === "nk" && password === "1234"  ) {
+    if (admin_name === "naveen@gmail.com" && password === "1234" || admin_name === "nk@gmail.com" && password === "1234"  ) {
       setMessage("Login Successful!");
       setTimeout(() => navigate("/home"), 800 ); 
     } else {
@@ -20,19 +20,19 @@ function Login() {
 
   return (
     <div className="login-container">
-      <h2>Admin Login</h2>
+      <h2>Login your E-Mail</h2>
 
       <form onSubmit={handleLogin} className="login-form">
         <input
           type="text"
-          placeholder="Enter Admin Name"
+          placeholder="Enter your E-Mail"
           value={admin_name}
           onChange={(e) => setAdminName(e.target.value)}
           required
         />
         <input
           type="password"
-          placeholder="Enter Password"
+          placeholder="Enter your Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required

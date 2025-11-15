@@ -9,21 +9,18 @@ function Home() {
   const navigate = useNavigate();
   return (
     <div className="home-container">
-      {/* Navbar */}
       <div className="navbar">
         <h1 className="logo1"><FaYoutube /></h1>
         <h2 className="logo">YouTube</h2>
         <input className="search" type="text" placeholder="Search" />
         <button className='Logout' onClick={() => navigate('/login')}>Logout</button>
       </div>
-      {/* Body */}
       <div className="body">
-        {/* -------- Sidebar Updated -------- */}
         <div className="sidebar">
-          <button className="side-btn">
+          <button className="side-btn" >
             <IoIosHome className="icon" /> Home
           </button>
-          <button className="side-btn">
+          <button className="side-btn" onClick={() => navigate('/shorts')}>
             <SiYoutubeshorts className="icon" /> Shorts
           </button>
           <button className="side-btn">
@@ -47,26 +44,13 @@ function Home() {
           </button>
           <hr className="line" />
           <h3 className="side-title">Explore</h3>
-          <button className="side-btn">
-            <MdSubscriptions className="icon" /> Trending
-          </button>
-          <button className="side-btn">
-            <MdSubscriptions className="icon" /> Music
-          </button>
-          <button className="side-btn">
-            <MdSubscriptions className="icon" /> Movies
-          </button>
-          <button className="side-btn">
-            <MdSubscriptions className="icon" /> Gaming
-          </button>
-          <button className="side-btn">
-            <MdSubscriptions className="icon" /> News
-          </button>
-          <button className="side-btn">
-            <MdSubscriptions className="icon" /> Sports
-          </button>
+          <button className="side-btn"><MdSubscriptions className="icon" /> Trending</button>
+          <button className="side-btn"><MdSubscriptions className="icon" /> Music</button>
+          <button className="side-btn"><MdSubscriptions className="icon" /> Movies</button>
+          <button className="side-btn"><MdSubscriptions className="icon" /> Gaming</button>
+          <button className="side-btn"><MdSubscriptions className="icon" /> News</button>
+          <button className="side-btn"><MdSubscriptions className="icon" /> Sports</button>
         </div>
-        {/* -------- Videos Section -------- */}
         <div className="videos">
           <div className="video-row">
             <iframe src="https://www.youtube.com/embed/CgkZ7MvWUAA" allowFullScreen></iframe>
@@ -82,48 +66,6 @@ function Home() {
             <iframe src="https://www.youtube.com/embed/CvCiNeLnZ00" allowFullScreen></iframe>
             <iframe src="https://www.youtube.com/embed/b9eMGE7QtTk" allowFullScreen></iframe>
             <iframe src="https://www.youtube.com/embed/oSmvHbnPCHA" allowFullScreen></iframe>
-          </div>
-          <div className="videos">
-          <div className="video-row">
-            <iframe src="https://www.youtube.com/embed/CgkZ7MvWUAA" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/RVFAyFWO4go" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/nCTh4OWjdMs" allowFullScreen></iframe>
-          </div>
-          <div className="video-row">
-            <iframe src="https://www.youtube.com/embed/EVdh8DCLnA0" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/UYFtY7Acngw" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/uLQRrc6ODaY" allowFullScreen></iframe>
-          </div>
-          <div className="video-row">
-            <iframe src="https://www.youtube.com/embed/CvCiNeLnZ00" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/b9eMGE7QtTk" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/oSmvHbnPCHA" allowFullScreen></iframe>
-          </div>
-          <div className="video-row">
-            <iframe src="https://www.youtube.com/embed/CvCiNeLnZ00" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/b9eMGE7QtTk" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/oSmvHbnPCHA" allowFullScreen></iframe>
-          </div>
-           <div className="video-row">
-            <iframe src="https://www.youtube.com/embed/CvCiNeLnZ00" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/b9eMGE7QtTk" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/oSmvHbnPCHA" allowFullScreen></iframe>
-          </div>
-           <div className="video-row">
-            <iframe src="https://www.youtube.com/embed/CvCiNeLnZ00" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/b9eMGE7QtTk" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/oSmvHbnPCHA" allowFullScreen></iframe>
-          </div>
-           <div className="video-row">
-            <iframe src="https://www.youtube.com/embed/CvCiNeLnZ00" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/b9eMGE7QtTk" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/oSmvHbnPCHA" allowFullScreen></iframe>
-          </div>
-           <div className="video-row">
-            <iframe src="https://www.youtube.com/embed/CvCiNeLnZ00" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/b9eMGE7QtTk" allowFullScreen></iframe>
-            <iframe src="https://www.youtube.com/embed/oSmvHbnPCHA" allowFullScreen></iframe>
-          </div>
           </div>
         </div>
       </div>
