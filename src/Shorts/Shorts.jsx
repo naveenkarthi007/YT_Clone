@@ -1,5 +1,4 @@
 import React from 'react'
-import "./Shorts.css";
 import { useNavigate } from 'react-router-dom';
 import { FaYoutube, FaHistory } from "react-icons/fa";
 import { IoIosHome } from "react-icons/io";
