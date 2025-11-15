@@ -5,9 +5,8 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/YT_Clone">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </StrictMode>
 )
-``
