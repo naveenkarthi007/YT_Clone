@@ -34,8 +34,10 @@ function Login() {
           type="password"
           placeholder="Enter your Password"
           value={password}
+          
           onChange={(e) => setPassword(e.target.value)}
           required
+
         />
 
         <button type="submit" onClick={{navigate}}>Login</button>
