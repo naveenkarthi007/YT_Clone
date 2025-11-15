@@ -1,6 +1,6 @@
 {
   "name": "task4",
-  "homepage": "https://naveenkarthi007.github.io/YT_Clone",
+  "homepage": "https://github.com/naveenkarthi007/YT_Clone",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
     "react": "^19.2.0",
