@@ -62,6 +62,15 @@ function Shorts() {
           <button className="side-btn">
             <MdSubscriptions className="icon" /> Sports
           </button>
+          <div className='video-shorts'>
+            <video
+            // ref={videoRef}
+            // className="shorts-video"
+            // src="https://samplelib.com/lib/preview/mp4/sample-20s.mp4"
+            // autoPlay
+            // muted
+          />
+          </div>
         </div>
       </div>
     </div>
